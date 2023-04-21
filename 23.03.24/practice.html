@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form id="" name="" action="" method="post" >
+    <!--기본적인 텍스트 입력 상자-->
+    <input type ="text">
+    <div><input type="text" id="fname" name="fname" value="" placeholder="이름을 입력하시오."></div>
+  
+    <br>
+    <!-- 위랑 거의 차이가 없음. -->
+    <input type ="search">
+    <div><input type="search" id="fbutton" name="fbutton" value="중복 확인 버튼"></div>
+    <!--  -->
+ 
+    <div><input type="search" id="button" name="button" value="중복 확인 버튼"></div>
+    <!--  ID이ㅡ nameing은 html제목에서 겉은  ㅎ]
+    -->
+
+    
+
+    <input type="button" id="fbutton" value="확인된 버튼">
+    
+    <br>
+    <br>
+    
+    <input type="checkbox" id="golf" value="골프" checked>골프
+    <input type="checkbox" id="baseball" value="야구">야구
+    <input type="checkbox" id="ball" value="축구">축구
+    
+    <br>
+    <br>
+    <input type="radio" id="apple" name="fruit" value="사과">사과
+    <input type="radio" id="watermelon" name="fruit" value="수박" checked>수박
+    <input type="radio" id="kewie" name="fruit" value="키위">키위
+    <!--                              보통은 value 값에 값 그대로 안넣고 코드로 변환해서 넣기도 함-->
+
+    <br>
+    <br>
+    <div><input type="color" id="color" name="color" value="#ff0000"></div>
+    <br>
+    <br>
+    <!--backoffice??만들때 많이 쓴다고 함-->
+    <div><input type="date" id="date" name="date" value="2023-05-12"></div>
+
+    <div><input type="datetime-local" id="date" name="date" value="2022-03-04 18:45"></div>
+    <!--------------->
+    
+    
+    <div><input type="file" name="file" id="file"></div>
+    <div><input type="hidden" name="file" id="file" value=""></div>
+
+    <div><input type="image" src="../img/work-5.jpg" id="image" name="image" alt="이미지입니다."
+        width="200px" height="200px"></div>
+
+    <div><input type="month" name="" id=""></div>
+    <div><input type="number" name="" id="" value="2"max="15" min="0"></div> 
+    <div><input type="password" name="" id=""></div>
+
+
+    <div><input type="range" name="" id="" min="0" max="2"></div>
+    <div><input type="reset" value="되돌리기" id="reset" name="reset"></div>
+    
+    <div><input type="tel" name="" id=""></div>
+    <div><input type="time" name="" id=""></div>
+
+    <div><input type="url" name="" id=""></div>
+    <div><input type="week" name="" id=""></div>
+
+    <p>
+        Visual Studio Code 의 좌측 탐색창은 단축키 <kbd>Ctrl</kbd> <kbd>+</kbd> <kbd>B</kbd>
+        누르면 나오고 안나오고 토글 기능이다.
+    </p>
+
+    <!--label 걍 span으로 대체 가능-->
+    <div>
+            <label for="">이름</label>
+        <div>
+            <input type="text" name="" id="">
+        </div>
+    </div>
+
+<span >취미 <br>
+    <select name="" id="" size="2" multiple>
+        <option value="" >당그은 쏘옹</option>
+        <option value="1">1초라도안보이면</option>
+        <option value="2" selected>2렇게 초조한데</option>
+        <option value="3" >3초는 어떻게 기다려</option>
+    </select>
+</span>
+<br>
+
+
+<label for="select_food">취미</label>:
+<select name="select_food2" id="">
+    <option value="" selected>좋아하는 식사는?</option>
+    <option value="아침">아침</option>
+    <option value="브런치">브런치</option>
+    <option value="점심">점심</option>
+    <option value="저녁">저녁</option>
+    <option value="야식">야식</option>
+</select>
+</form>
+    </body>
+</html>

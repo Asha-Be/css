@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        li{
+            /* ㄷㄷㄷ */
+            color: tomato;
+        }
+        ul{
+            /* list-style: circle;
+            리스트 옆에 있던 땡땡이 바꾸는 스타일 코드 */
+             list-style-type:square;
+            /* list-style-image: url(../img/work-4.jpg); */
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- unordered list -->
+    <ul>
+        <li>스파게티</li>
+        <li>피자</li>
+        <li>커피</li>
+    </ul>
+
+    <!-- order list :1,2,3 같이 순서 매겨줌 -->
+    <ol style="list-style-type: upper-roman;">
+        <li>웹디</li>
+        <li>프론트</li>
+        <li>뺵</li>
+    </ol>
+
+    <!-- Definition list : dl,dt,dd :: 목록 정의 > 목록 항목 주제 > 목록 항목 내용 -->
+    <!-- 굳?이? ul쓰는게 효율적이지않남... -->
+    <dl>
+        <dt>음료</dt>
+        <dd>카.마</dd>
+        <dd>딸.요</dd>
+        <dt>디저트</dt>
+        <dd>딸.케</dd>
+        <dd>이벤트샌드위치</dd>
+        
+    </dl>
+
+    <div>
+        <ul>
+            <li>커피</li>
+            <li>스파게티
+                <ul>
+                    <li>바네트 스파게티</li>
+                    <li>토마토 스파게티
+                        <ul>
+                            <li>치즈토마토스파게티</li>
+                            <li>핫소스 토마토 스파게티</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>피자</li>
+        </ul>
+    </div>
+
+    <!-- -------------- -->
+    <div>
+        <table style="border-collapse:collapse; margin: 50px auto;"  border="1;" >
+            <tfoot>
+                <tr scope="col">
+                    <th>저는..!</th>
+                    <th>루루루</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>    
+            </tfoot>
+            <tbody>
+                <tr scope="col">
+                    <th>저는..!</th>
+                    <th>루루루</th>
+                </tr>
+                <tr>
+                    <td style="padding:100px;">1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+
+            
+            <thead>
+                <!-- thead인 이상 무조건 맨 위에 있는 코드로 간주됨 -->
+                <tr scope="col">
+                    <th>저는..!</th>
+                    <th>루루루</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+<!-- 
+    ------------- -->
+
+
+</body>
+</html>

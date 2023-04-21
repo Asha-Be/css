@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {border-collapse: collapse; margin : 50px auto;}
+        th, td{ border :1px solid #ccc; padding : 15px 30px;}
+        tr:nth-child(1) {background-color : thistle;}
+        td {text-align: center;}
+/* 
+        :nth-child(N)= 부모안에 모든 요소 중 N번째 요소 */
+        /*
+         즉 tr:nth-child(1) 은 tr 에 있는 모든 요소 중 첫번째 요소를 가리킨다.
+        */
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>구분</td>
+            <td>처리업무</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Frontend(Web Publisher)</td>
+            <td>Model: 웹 표준 코딩</td>
+        </tr>
+        <tr>
+            <td>View 웸 표준 코딩</td>
+        </tr>
+        <tr>
+            <td>Controler : Javascript & jQuery 코딩</td>
+        </tr>
+        <tr>
+            <td>Response : 반응형</td>
+        </tr>
+    </table>
+
+    <!-- --------------------------------- -->
+
+    
+</body>
+</html>

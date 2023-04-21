@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {margin:0; padding:0;}
+img{ vertical-align:middle;}
+#wrap {width:1000px;margin :0 auto;}
+#section1 {width:100%;} 
+#section1 ul {list-style: none; width:100%;}
+#section1 ul li {width:23.8%; float:left; margin-left:5px; margin-bottom:5px;}
+#section1 ul li img {
+    width : 100%;
+    display : block;
+}
+#section1 ul:after {
+    clear:left;
+    display : block;
+    content : "";
+}
+.clearfix ::after {
+    clear:left;
+    display : block;
+    content : "";
+}
+
+    </style>
+</head>
+
+<body>
+   
+    
+    <div id="wrap">
+        <section id="section1">
+            <ul class="clearfix">
+                <li><img src="../img/work-1.jpg" alt=""></li>
+                <li><img src="../img/work-2.jpg" alt=""></li>
+                <li><img src="../img/work-3.jpg" alt=""></li>
+                <li><img src="../img/work-4.jpg" alt=""></li>
+                <li><img src="../img/work-5.jpg" alt=""></li>
+                <li><img src="../img/work-6.jpg" alt=""></li>
+                <li><img src="../img/work-7.jpg" alt=""></li>
+                <li><img src="../img/work-8.jpg" alt=""></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

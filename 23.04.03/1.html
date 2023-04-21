@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .table1-design {
+            border:3px solid green ;                                                 
+            border-collapse: collapse;
+        }
+
+        main {
+            text-a : aksenqntuwlwk akrf
+        }
+    </style>
+</head>
+<body>
+    <!-- colspan과 rowspan은 항상 td의 속성으로 사용해야 한다.-->
+    <table id="table1" class="table1-design" border="1">
+        <caption>table span 사용</caption>
+        <colgroup>
+            <col style="width:50px;">
+            <col style="width:50px;">
+            <col style="width:50px;">
+            <col style="width:50px;">
+            <col style="width:50px;">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table id="table2" class="">
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer{
+            /* color:rosybrown; */
+            color :rosybrown !important; /* << !important쓰면 이게 최우선으로 실행되지만 남용하면 다 꼬임. 
+            
+            */
+
+        }
+        .footer-class{
+                color : red !important;               
+            }
+
+            *{
+            color: red
+            ;
+
+            margin : 8px;
+            padding : 9px;
+
+            }
+
+            div{
+                color:blue;
+            }
+
+            li{
+                color:wheat;
+            }
+ 
+  </style>
+</head>
+<body>
+
+    <p style="color:#c00;font-size:30px;text-align:center;">프론트앤드</p>
+    <!-- 인라인방식 얘만 딱 적용이 된당 -->
+
+    <footer style="color: orange;" class="footer-class">footer태그입니다.</footer>
+    <!-- 내장방식보다 인라인 방식이 우선된다. -->
+
+    <!-- CSS 방식 우선순위
+    1. important 키워드
+    2. 인라인 방식(태그안에 style 속성이 없는 것)
+    3. 내부 스타일 태그 안의 style태그가 있는 거
+    4. 링크 방식(외부 스타일) -->
+
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+        </ul>
+        <div>당ㅇ근</div>
+        <p>토마토</p>
+        <span>오렌지</span>
+    </div>
+
+</body>
+</html>

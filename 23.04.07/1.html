@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> 
+        a[href^="https"]{
+            /* ^ > 뫄뫄로 '시작되는' */
+            color: pink;
+        }   
+
+        a[target="_blank"]{
+            color:orange
+        }
+
+        /* 속성 선택자 특수기호들 :
+                        =_ , ~= , |= , ^= , $= , *= , */
+        
+        [target]{
+            background : #00c;
+            color :#fff;
+        }
+
+        [target=_blank]{
+            background:#c00;
+            color : #fff;
+        }
+
+       [title~="웹(Web)"]{
+        background-color: #000;
+        color: #fff;
+       }
+        
+        a[href^="https"]{
+            background: #0c0;
+            color:#fff;
+        }
+
+        a[href$="com"]{
+            background: #0c0;
+            color:#fff;
+            text-decoration: overline;
+        }
+
+        a[href*="tjoeun"]{
+            background: #0cc;
+            color:#000;
+        }
+
+        input:checked + span{
+            color : red;
+        }
+
+        input:enabled + span {
+            color:blueviolet
+        }
+        
+        input:disabled + span {
+            background-color: violet;
+        }
+   </style>
+</head>
+<body>
+
+    <a href="https://www.naver.com" target="">네이버로 이동</a>
+    <a href="localhost" target="_blank">로컬로 이동</a>
+    <br> <a href="http://www.gmail.com">지메일로 이동</a>
+
+
+
+    <p>프론트엔드는 많은 앞단에 이루어지는 <a href=""> <i>웹 사이트</i> </a>를 처리한다. </p>
+
+    <p><a href="#" target="_self" title="웹 기획">웹 기획</a></p>
+    <p><a href="#" target="_blank" title="웹 스토리 보드">웹 스토리 보드</a></p>
+    <p><a href="#" title="웹 스토리 텔링">웹 스토리 텔링</a></p>
+    <div>
+        <h1 class="section1" title="선택자 스타일 지정"> 선택자 스타일 지정 </h1>
+        <p class="text-web" title="웹 디자이너">웹 디자이너</p>
+    </div>
+    <p><a href="#" target="_self" title="웹(Web) 기획">웹 기획</a></p>
+    <p><a href="#" target="_blank" title="웹개발자 스토리 보드">웹 스토리 보드</a></p>
+    <p><a href="#" title="웹(Web) 스토리 텔링">웹 스토리 텔링</a></p>
+
+    <p><a href="https://www.naver.com" title="웹(Web) 기획 "> 웹 기획</a></p>
+    <p><a href="https://www.tjoeun.co.kr" title="웹(Web) 스토리 보드">웹 스토리보드</a></p>
+    <p><a href="http://www.tjoeun.co.kr" title="웹(Web) 스토리 텔링">웹 스토리텔링</a></p>
+
+    <input type="checkbox" id="checkbox1" enabled><span>음악</span>
+    <input type="checkbox" id="checkbox2" enabled><span>운동</span>
+    <input type="checkbox" id="checkbox3" disabled ><span>여행</span>
+    <input type="checkbox" id="checkbox4" readonly ><span>나라</span>
+    <input type="checkbox" id="checkbox5" required ><span>취미</span>
+</body>
+</html>

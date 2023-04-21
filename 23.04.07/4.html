@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* dl dt,
+        dl dd {line-height: 30px; margin-bottom:1px;}
+        dl dd:nth-of-type(2n+2){
+            color :#c00;
+            background:#ee7;
+        }
+
+        ul{list-style: circle;}
+        ul li {line-height: 30px;margin-bottom: 1px;}
+        ul li:nth-child(2n+3){
+            color:#c00;
+            background: #ee7;
+        } */
+
+        div :not(span,div){
+            color :red;
+        }
+
+        ul *:nth-child(odd){
+            color:blue
+        }
+    </style>
+</head>
+<body>
+
+    <dl>
+        <dt>파스타 면의 종류</dt>
+        <dd>스.게 ...</dd>
+        <dd>링귀 ...</dd>
+        <dd>부.티 ...</dd>
+        <dd>탈.텔 ...</dd>
+        <dd>페.투 ...</dd>
+        <dd>라 ...</dd>
+        <dd>펜 ...</dd>
+        <dd>푸 ...</dd>
+        <dd>기타 ...</dd>
+    </dl>
+
+    <ul>
+        <h3>파스타 면의 종류</h3>
+        <li>스.게 ...</li>
+        <li>링귀 ...</li>
+        <li>부.티 ...</li>
+        <li>탈.텔 ...</li>
+        <li>페.투 ...</li>
+        <li>라 ...</li>
+        <li>펜 ...</li>
+        <li>푸 ...</li>
+        <li>기타 ...</li>
+    </ul>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+    <div>
+        <span>딸기</span>
+        <span>수박</span>
+        <div>오렌지</div>
+        <p>망고</p>
+    </div>
+    
+</body>
+</html>

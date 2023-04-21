@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:empty {
+            color :red;
+        }
+
+        li:empty:before {
+            content:"멜론"
+        }
+
+        li:empty:after{
+            content :"토마토"
+        }
+
+        ul li:first-child{
+            color:blue;
+        }
+
+        ul li:nth-child(1){
+            color :blue;
+            /* 바로 위의 css와 같음 */
+        }
+
+        ul li:nth-child(2){
+            color : purple;
+        }
+        
+        ul li::first-letter {
+            color:tomato;
+        }
+
+        /* ul li::first-line{
+            color:rgb(226, 172, 33);
+        }
+
+        div::first-line{
+            color : blue;
+        } */
+
+        ul li:nth-of-type(4){
+            color:black;
+        }
+
+        ul li:nth-child(n+3){
+            color:aquamarine
+        }
+/* 
+        n은 0부터 가능하다. */
+
+        ul li:nth-child(3n+1){
+            color :steelblue;
+        }
+
+        ul li:nth-child(odd){
+            color:yellow
+        }
+
+        ul li:nth-child(even){
+            color:orange
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>사과</li>
+        <li>딸기
+        </li>
+        <li>포도</li>
+        <li></li>
+        <!-- 0이아닌 완전한 null일때만 :empty가 작동되어 리스트가 붉게 변함. -->
+        <li>망고</li>
+    </ul>
+
+    <div>
+        <h1>h2태그입니다.</h1>
+        <p>운동</p>
+        <p>여행</p>
+        <span>span태그</span>
+        <p>음악</p>
+
+    </div>
+</body>
+</html>

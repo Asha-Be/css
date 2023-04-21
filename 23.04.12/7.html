@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{margin:0}
+
+        body {font-size: 15px; color : #555; line-height: 160%;
+        background: #f9f9f5;}
+        #wrap{ margin : 50px auto; width : 600px;}
+        #wrap #textBox{ background: #fff;}
+        #wrap #textBox .gap{ padding: 50px;}
+        #wrap #textBox .gap h3{ font-weight:normal;font-size: 20px;text-align: center;
+        color:#99c;}
+        #wrap #testBox .gap p{
+            width :100%; height : 40px; line-height: 40px; margin-bottom: 10px;
+            padding : 0 10px;
+        }
+
+
+        #wrap #textBox .gap p.text-wrap1 {
+            word-wrap:normal;
+        }
+        #wrap #textBox .gap p.text-wrap1-break-all{
+            word-wrap:break-word;overflow: hidden;
+        }
+        #wrap #textBox .gap p.text-wrap2 {
+            word-wrap:normal; overflow: hidden;
+        }
+        #wrap #textBox .gap p.text-wrap3 {
+            white-space: nowrap;
+        }
+        #wrap #textBox .gap p.text-wrap4 {
+            word-wrap:normal;overflow:hidden;text-overflow:ellipsis;
+        }
+
+        .box-sizing1 {
+            width : 200px;
+            height : 200px;
+            border : 10px solid red;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-sizing1"></div>
+
+    <div id="wrap">
+        <div id="textBox">
+            <div class="gap">
+                <div id="text-wrap">
+                    <h3>word-wrap:normal;</h3>
+                    <p class="text-wrap1">
+                        fwagjwoeig0j;wagija;gijw;ekjgw;alegjawoeigja;ewoigj;aoweigj;oweijgf;lwsefkdja;oweigkj;alwkgej;lwekjg;waeigj;aw
+                    </p>
+                    <h3>word-wrap:break-word; overflos:hidden;</h3>
+                    <p class="text-wrap1-break-all">
+                        fwagjwoeig0j;wagija;gijw;ekjgw;alegjawoeigja;ewoigj;aoweigj;oweijgf;lwsefkdja;oweigkj;alwkgej;lwekjg;waeigj;aw
+                    </p>
+                    <h3>word-wrap:normal; overflow:hidden;</h3>
+                    <p class="text-wrap2">
+                        fwagjwoeig0j;wagija;gijw;ekjgw;alegjawoeigja;ewoigj;aoweigj;oweijgf;lwsefkdja;oweigkj;alwkgej;lwekjg;waeigj;aw
+                    </p>
+                    <h3>white-space:nowra;</h3>
+                    <p class="text-wrap3">
+                        fwagjwoeig0j;wagija;gijw;ekjgw;alegjawoeigja;ewoigj;aoweigj;oweijgf;lwsefkdja;oweigkj;alwkgej;lwekjg;waeigj;aw
+                    </p>
+                    <h3>white-space:nowrap; overflow:hidden;</h3>
+                    <p class="text-wrap4">
+                        fwagjwoeig0j;wagija;gijw;ekjgw;alegjawoeigja;ewoigj;aoweigj;oweijgf;lwsefkdja;oweigkj;alwkgej;lwekjg;waeigj;aw
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:link{
+            color:#333;text-decoration: none;
+        }
+        a:visited {color:#c33;}
+        a:hover {
+            text-decoration:underline; color:#c6c;
+        }
+        a:focus {
+            text-decoration: underline; color :#c6c;outline:0;
+        }
+        a:active { background:#c00; text-decoration:none;}
+    
+        p:before{
+            content : '이전 ';
+            color : teal;
+        }
+
+        p::after{
+            content : '로';
+            color :    steelblue;
+        }
+
+        #box::after {
+            content :'이후 콘텐츠 내용';
+            color : #040;
+        }
+        
+        #box::before {
+            content :'이전 콘텐츠 내용';
+            color : rgb(148, 124, 26);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <p><a href="#">웹 기획</a></p>
+        <p><a href="#">웹 스토리보드</a></p>
+        <p><a href="ㅁㄴ">웹 스토리텔링</a></p>
+        <p><a href="ㅁ">웹 디자인</a></p>
+        <p><a href="#">웹 포트폴리오</a></p>
+    </div>
+    
+
+    <br>
+
+    <p>p태그입니다.</p>
+
+    <div id="box">
+        <h1 class="section1">p 선택자 스타일 지정</h1>
+
+        <p class="text-web">웹 디자이너</p>
+        <p>웹 퍼블리셔</p>
+        <p class="text-web">웹 디자이너</p>
+        <h3>백엔드</h3>
+    </div>
+</body>
+</html>

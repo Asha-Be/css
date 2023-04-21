@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+            width:300px;
+            background-color: blue;
+            display : inline-flex;
+        }
+
+        .container .item{ 
+            width : 80px;
+            height : 88px;
+            border: 3px dashed red;
+            background-color: orange;
+        }
+        .container1 { 
+            /* width:300px; */
+            background-color: blue;
+            display : flex;
+            flex-direction: row-reverse;
+            
+        }
+
+        .container1 .item1{ 
+            width : 80px;
+            height : 88px;
+            border: 3px dashed red;
+            background-color: orange;  
+        }
+
+        .container2 { 
+            /* width:300px; */
+            background-color: blue;
+            display : flex;
+        }
+
+        .container2 .item2{ 
+            width : 80px;
+            height : 88px;
+            border: 3px dashed red;
+            background-color: orange;
+        }
+
+        .container0 { 
+            /* width:300px; */
+            height : 400px;
+            background-color: rgb(223, 152, 86);
+            display : flex;
+            flex-direction: column-reverse;
+        }
+
+        .container0 .item0{ 
+            width : 80px;
+            height : 88px;
+            border: 3px dashed red;
+            background-color: rgb(119, 216, 216);
+        }
+
+        /* .container .item:first-child{
+            
+        }
+
+        .container .item:nth-child(2){
+
+        }
+
+        .container .item:last-child{
+
+        } */
+
+        .flex-container{ 
+            display : flex;
+            height : 400px;
+            width : 300px;
+            background-color: rgb(163, 109, 78);
+            flex-wrap : wrap;
+        }
+
+        .flex-container .flex-item{
+            width : 100px;
+            height : 100px;
+            background-color: blueviolet;
+            border : 3px dashed yellow;
+            box-sizing: border-box;
+        }
+        .flex-container0{ 
+            display : flex;
+            height : 200px;
+            width : 300px;
+            flex-direction: row;
+            background-color: rgb(163, 109, 78);
+            /* flex-wrap : wrap; */
+            justify-content: space-evenly;
+        }
+
+        .flex-container0 .flex-item0{
+            width : 70px;
+            height : 70px;
+            background-color: blueviolet;
+            border : 3px dashed yellow;
+            box-sizing: border-box;
+        }
+        
+        .flex-container1{ 
+            display : flex;
+            width : 300px;
+            height : 300px;
+            flex-direction: row;
+            background-color: rgb(238, 169, 129);
+            flex-wrap : wrap;
+            /* justify-content: space-evenly; */
+            align-content: end;
+        }
+
+        .flex-container1 .flex-item1{
+            width : 80px;
+            height : 80px;
+            background-color: blueviolet;
+            border : 3px dashed yellow;
+            box-sizing: border-box;
+        }
+
+        .flex-container2{ 
+            display : flex;
+            width : 300px;
+            height : 300px;
+            flex-direction: row;
+            background-color: rgb(238, 169, 129);
+            flex-wrap : wrap;
+            /* justify-content: space-evenly; */
+            align-content: flex-start;
+        }
+
+        .flex-container2 .flex-item2{
+            width : 80px;
+            height : 80px;
+            background-color: rgb(127, 91, 160);
+            border : 3px dashed rgb(70, 86, 224);
+            box-sizing: border-box;
+        }
+
+
+
+        .flex-container3{ 
+            display : flex;
+            width : 300px;
+            height : 300px;
+            /* flex-direction: row; */
+            background-color: rgb(238, 129, 156);
+            /* flex-wrap : wrap; */
+            flex-flow : row wrap;
+        }
+
+        .flex-container3 .flex-item3{
+            width : 80px;
+            height : 80px;
+            background-color: rgb(127, 91, 160);
+            border : 3px dashed rgb(70, 86, 224);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container0">
+        <div class="flex-item0">a</div>
+        <div class="flex-item0">b</div>
+        <div class="flex-item0">b</div>
+    </div>
+
+    <br>
+    
+    <div class="flex-container1">
+        <div class="flex-item1">a</div>
+        <div class="flex-item1">b</div>
+        <div class="flex-item1">b</div>
+        <div class="flex-item1">a</div>
+        <div class="flex-item1">b</div>
+    </div>
+
+    <br>
+    
+    <div class="flex-container2">
+        <div class="flex-item2">a</div>
+        <div class="flex-item2">b</div>
+        <div class="flex-item2">b</div>
+        <div class="flex-item2">a</div>
+        <div class="flex-item2">b</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container3">
+        <div class="flex-item3">a</div>
+        <div class="flex-item3">b</div>
+        <div class="flex-item3">b</div>
+        <div class="flex-item3">a</div>
+        <div class="flex-item3">b</div>
+    </div>
+
+    <br>
+
+    <div class="flex-container">
+        <div class="flex-item">a</div>
+        <div class="flex-item">b</div>
+        <div class="flex-item">c</div>
+        <div class="flex-item">d</div>
+        <div class="flex-item">e</div>
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <br><br>
+    <div class="container0">
+        <div class="item0">1</div>
+        <div class="item0">2</div>
+        <div class="item0">3</div>
+    </div>
+    <br>
+    <br>
+    <div class="container1">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+    </div>
+    <div class="container1">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+    </div>
+    <div class="container1">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+    </div>
+    <div class="container2">
+        <div class="item2">1</div>
+        <div class="item2">2</div>
+        <div class="item2">3</div>
+    </div>
+</body>
+</html>
