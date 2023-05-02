@@ -1,0 +1,108 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+header {
+    background-color: rgb(246,246,246);
+    /* background-color: royalblue; */
+}
+
+.inner {
+    position: relative;
+    width: 800px;
+    height: 110px;
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;;
+}
+
+img {
+    display: block;
+}
+
+.logo {
+    height: 75px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0;
+    position: absolute;
+}
+
+.top-sub-menu {
+    display: flex;
+    right: 50px;
+    position: absolute;
+}
+
+.top-sub-menu ul.sub-menu {
+    display: flex;
+}
+
+.top-sub-menu ul.sub-menu li {
+    position: relative;
+}
+
+.top-sub-menu ul.sub-menu li:first-child:before {
+    display: none;
+}
+
+.top-sub-menu ul.sub-menu li:before {
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: rgb(204, 198, 198);   
+    top: 3px;
+    bottom: 0px;
+    position: absolute;   
+    margin: auto 0;
+}
+
+.top-sub-menu ul.sub-menu li a {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    /* background-color: white; */
+    padding: 8px 12px;
+}
+
+.top-sub-menu ul.sub-menu li a:hover {
+    text-decoration: underline;
+}
+
+.top-sub-menu .search {
+    position: relative;
+    /* right: 16px; */
+}
+
+.top-sub-menu .search input {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    width: 32px;
+    height: 28px;
+    transition: width 0.5s;
+}
+
+.top-sub-menu .search input:focus {
+    width: 180px;
+}
+
+.top-sub-menu .search .material-icons {
+    display: block;
+    position: absolute;
+    height: 28px;
+    top: 3px;
+    bottom: 0px;
+    right: 2px;
+    margin: auto 0;
+    
+}
+
