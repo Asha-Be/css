@@ -10,10 +10,14 @@ header {
     /* background-color: royalblue; */
 }
 
+header > .inner {
+    height: 110px;
+}
+
 .inner {
     position: relative;
-    width: 800px;
-    height: 110px;
+    width: 1100px;
+    /* height: 110px; */
     margin: 0 auto;
     /* background-color: orange; */
 }
@@ -37,8 +41,9 @@ img {
 
 .top-sub-menu {
     display: flex;
-    right: 50px;
+    right: 100px;
     position: absolute;
+    margin-top: 10px;
 }
 
 .top-sub-menu ul.sub-menu {
@@ -57,7 +62,7 @@ img {
     content: "";
     width: 1px;
     height: 13px;
-    background-color: rgb(204, 198, 198);   
+    background-color: rgb(222, 222, 222);   
     top: 3px;
     bottom: 0px;
     position: absolute;   
@@ -68,8 +73,11 @@ img {
     display: block;
     font-size: 13px;
     color: #555;
+    /* font-weight: 500; */
+    font-family: Arial, georgia;
     /* background-color: white; */
     padding: 8px 12px;
+    letter-spacing: 0px;
 }
 
 .top-sub-menu ul.sub-menu li a:hover {
@@ -104,5 +112,79 @@ img {
     right: 2px;
     margin: auto 0;
     
+}
+
+header .inner ul.main-menu {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+}
+
+header .inner ul.main-menu li.menu-item {
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-name {
+    padding: 10px 20px 34px 20px;
+    font-size: 13px;
+    font-family: Arial, Georgia;
+    font-weight: 300;
+    color: #333
+}
+
+header .inner ul.main-menu li.menu-item:hover div.item-name {
+    color: rgb(93, 106, 37);
+    background-color: #2C2A29;
+    text-decoration: underline;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu {
+    background-color: #2C2A29;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: none;
+    /* height: 0px;
+    overflow: hidden;
+    transition: height 1s; */
+}
+
+header .inner ul.main-menu li.menu-item:hover div.item-contents-menu {
+    display: block;
+    /* height: 300px; */
+    /* height: 100%; */
+    /* transition: height 1s; */
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 {
+
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul {
+    display: flex;
+    padding: 20px 0;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li {
+    width: 212px;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > h4 {
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 0 15px 0;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > ul {
+    color: #999;
+}
+
+header .inner ul.main-menu li.menu-item div.item-contents-menu .item-contents-menu-2 > ul > li > ul li {
+    padding: 5px 0px;
+    font-size: 12px;
+    letter-spacing: -1px;
 }
 
