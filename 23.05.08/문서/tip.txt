@@ -1,0 +1,12 @@
+
+github 를 통해 만든 사이트의 html을 밖으로 배포하는?? 방법
+
+
+----------------
+
+
+git hub 레지스토리에서 setting > pages > branch설정 > 위에 링크 생성되면 거기에 html 추가로 작성하기
+
+결과물
+
+https://asha-be.github.io/study-copyStarbucks/starbucks.html
